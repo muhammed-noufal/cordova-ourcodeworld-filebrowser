@@ -18,6 +18,8 @@ width="25%" />
 <img src="https://raw.githubusercontent.com/spacecowboy/NoNonsense-FilePicker/master/screenshots/Nexus10-picker-light.png"
 width="50%" />
 ## Installation
+ 
+ Note : [Fixes for Cordovoa v9.0.0](https://github.com/muhammed-noufal/cordova-ourcodeworld-filebrowser#fixes)
 
 Install the plugin
 
