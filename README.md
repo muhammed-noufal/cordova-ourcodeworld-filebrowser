@@ -118,6 +118,21 @@ Create mnk_file_path named xml file under style folder inside android platform. 
             path="." />
     </paths>
 ```
+This can be set in cordova config.xml
+```xml
+<platform name="android">
+  <config-file parent="/manifest/application" target="AndroidManifest.xml">
+			<provider android:name="android.support.v4.content.FileProvider"
+					  android:authorities="${applicationId}.provider"
+					  android:exported="false"
+					  android:grantUriPermissions="true">
+				<meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+						   android:resource="@xml/mnk_file_path"/>
+			</provider>
+  </config-file>
+  <resource-file src="res/android/mnk_file_path.xml" target="app/src/main/res/xml/mnk_file_path.xml"/>
+</platform>
+```
 
 -To fix issue as window.resolveLocalFileSystemURI is not a function. add cordova-plugin-file plugin
 
